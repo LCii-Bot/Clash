@@ -1,6 +1,11 @@
 # 该规则集包含绝大部分微信/WeChat网络请求 (IPv4/IPv6)
 # 请注意，该规则集除 Surge 之外不应该使用 (由于双栈问题且考虑到规则数量，部分子规则写法仅与Surge兼容)
 # Credit: https://raw.githubusercontent.com/NobyDa/Script/refs/heads/master/Surge/WeChat.list
+
+DOMAIN-KEYWORD,weixin
+DOMAIN-KEYWORD,qq
+DOMAIN-KEYWORD,weixinbridge
+
 IP-CIDR,101.226.211.0/8,no-resolve
 IP-CIDR,101.226.222.0/8,no-resolve
 IP-CIDR,101.226.226.0/8,no-resolve
@@ -367,9 +372,6 @@ DOMAIN-SUFFIX,rttgps.map.qq.com
 DOMAIN-SUFFIX,ue.indoorloc.map.qq.com
 DOMAIN-SUFFIX,up-hl.3g.qq.com
 DOMAIN-SUFFIX,yun-hl.3g.qq.com
-
-DOMAIN-KEYWORD,weixin
-DOMAIN-KEYWORD,qq
 
 USER-AGENT,WeChat*
 USER-AGENT,MicroMessenger*
